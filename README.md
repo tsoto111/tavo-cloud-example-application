@@ -1,32 +1,36 @@
+# Building Scalable Web Applications Using the Cloud
+## PHP Cloud Example Appliciation
+
 This repository contains the Example Program used in the book, Building Scalable Web Applications Using the Cloud: A Simple Guide to Programming and Administering Cloud-based Applications by Jonathan Bartlett.
+
 Each branch contains a different version of the application.
 In order to use the application, you will need to replace every IP address with the appropriate IP address in your application.
 
-Branches:
+### Branches:
 
-master - this branch contains the initial code for Chapter 4: Creating a Simple Web App.  The only modification of this code that is needed is to change the password on both connection strings to your database user's password in common.php.
+**master** - this branch contains the initial code for **Chapter 4: Creating a Simple Web App**.  The only modification of this code that is needed is to change the password on both connection strings to your database user's password in common.php.
 
-two_tier - this branch contains the code for the two-tier application for Chapter 5: Setting Up a Basic Cloud Cluster.  The modifications for this code include:
+**two_tier** - this branch contains the code for the two-tier application for **Chapter 5: Setting Up a Basic Cloud Cluster**.  The modifications for this code include:
   * Setting the password on both connection strings to your database user's password in common.php
   * Replacing all instances of DB.MASTER.PRIVATE.IP with your database's private IP address in common.php.
 
-caching - this branch contains the code for the caching application for Chapter 6: Improving Scalability with Caching.  
+**caching** - this branch contains the code for the caching application for **Chapter 6: Improving Scalability with Caching**.  
 The modifications for this code are the same as for two_tier:
   * Setting the password on both connection strings to your database user's password in common.php
   * Replacing all instances of DB.MASTER.PRIVATE.IP with your database's private IP address in common.php.
 
-db_replication - this branch contains the code for the master/slave database replication application for Chapter 7: Database Replication.  The modifications for this code include the following:
+**db_replication** - this branch contains the code for the master/slave database replication application for **Chapter 7: Database Replication**.  The modifications for this code include the following:
   * Setting the password on both connection strings to your database user's password in common.php
   * Replacing all instances of DB.MASTER.PRIVATE.IP with your master database's private IP address in common.php.
   * In the function getReadOnlyConnection() in common.php, replace the list of slave servers (i.e., DB.SLAVE.PRIVATE.IP, DB.SLAVE2.PRIVATE.IP, etc.) with the private IP addresses of your own slave servers.  Adjust the size of the list to the number of slave servers that are in use.
 
-cdn - this branch contains the code for using the content delivery network (CDN) for Chapter 8: Using a Content Delivery Network.  The modifications for this code include the following:
+**cdn** - this branch contains the code for using the content delivery network (CDN) for Chapter 8: Using a Content Delivery Network.  The modifications for this code include the following:
   * Setting the password on both connection strings to your database user's password in common.php
   * Replacing all instances of DB.MASTER.PRIVATE.IP with your master database's private IP address in common.php.
   * In the function getReadOnlyConnection() in common.php, replace the list of slave servers (i.e., DB.SLAVE.PRIVATE.IP, DB.SLAVE2.PRIVATE.IP, etc.) with the private IP addresses of your own slave servers.  Adjust the size of the list to the number of slave servers that are in use.
   * Replace xyzabc.cloudfront.net with the name of your own CloudFront CDN host in common.php
 
-cloud_storage - this branch contains the code for using S3 file storage for Chapter 9: Using S3 For Infinite Disk Space.
+**cloud_storage** - this branch contains the code for using S3 file storage for **Chapter 9: Using S3 For Infinite Disk Space**.
 The modifications for this code include the following:
   * Setting the password on both connection strings to your database user's password in common.php
   * Replacing all instances of DB.MASTER.PRIVATE.IP with your master database's private IP address in common.php.
