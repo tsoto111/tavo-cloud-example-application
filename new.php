@@ -1,20 +1,24 @@
 <?php
 	include("common.php");
+	
 	getHeader();
-?>
-<h2>New Guestbook Entry</h2>
-<form action="create.php" method="POST">
-	<label>Name</label>
-	<input type="text" name="name" />
 
-	<label>Email</label>
-	<input type="text" name="email" />
+		echo "<h2>New Guestbook Entry</h2>";
 
-	<label>Message</label>
-	<textarea name="message"></textarea>
+		echo "<form action='create.php' method='POST'>";
+			echo "<label>Name</label>";
+			echo "<input type='text' name='name' />";
+			
+			echo "<label>Email</label>";
+			echo "<input type='text' name='email' />";
 
-	<input type="submit" />
-</form>
-<?php
+			echo "<label>Message</lable>";
+			echo "<textarea name='message'></textarea>";
+
+			echo "<input type='submit' />";
+		echo "</form>";
+
 	getFooter();
+
 ?>
+

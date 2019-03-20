@@ -16,6 +16,7 @@
 	getHeader();
 
 	echo "<a href='new.php'>New Entry</a>";
+	
 	echo "<ul>";
 		foreach($result as $row) {
 			$url = "single.php?id=".$row["id"];
