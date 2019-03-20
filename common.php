@@ -1,20 +1,12 @@
 <?php
-
-	function getCache() {
-		$conn = new Memcached();
-		$conn->addServer("localhost", 11211);
-		return $conn;
-	}
-
-
 	function getReadOnlyConnection() {
-		return new PDO("pgsql:host=DB.MASTER.PRIVATE.IP;" .
+		return new PDO("pgsql:host=localhost;" .
 			"port=5432;dbname=guestbookapp;" .
 			"user=gbuser;password=mypassword"
 		);
 	}
 	function getReadWriteConnection() {
-		return new PDO("pgsql:host=DB.MASTER.PRIVATE.IP;" .
+		return new PDO("pgsql:host=localhost;" .
 			"port=5432;dbname=guestbookapp;" .
 			"user=gbuser;password=mypassword"
 		);
