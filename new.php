@@ -7,17 +7,17 @@
 
 		echo "<form action='create.php' method='POST'>";
 			echo "<div class='field-group'>";
-				echo "<label>Name</label><br/>";
+				echo "<label>Name</label>";
 				echo "<input type='text' name='name' />";
 			echo "</div>";
 
 			echo "<div class='field-group'>";
-				echo "<label>Email</label><br/>";
+				echo "<label>Email</label>";
 				echo "<input type='text' name='email' />";
 			echo "</div>";
 
 			echo "<div class='field-group'>";
-				echo "<label>Message</label><br/>";
+				echo "<label>Message</label>";
 				echo "<textarea name='message'></textarea>";
 			echo "</div>";
 
