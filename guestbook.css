@@ -14,3 +14,7 @@ label {
 	display: block;
 	font-weight: bold;
 }
+
+.field-group {
+	margin-bottom:20px;
+}
